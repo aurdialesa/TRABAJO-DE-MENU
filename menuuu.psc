@@ -52,7 +52,7 @@ funcion mayor_menor(num1,num2,num3)// ejercicio 4 y ejercicio 5
 	FinSi
 FinFuncion
 // La despensa "El Baraton", a todas las ventas que pasen de $100,
-//se les aplicar· un  descuento del 10%, a  todo los dem·s se les aplicar· sÛlo el 5% 
+//se les aplicar√° un  descuento del 10%, a  todo los dem√°s se les aplicar√° s√≥lo el 5% 
 // luego del recargo del iva del 12%
 funcion Descuentos = descuento(iva,ventas)//6
 	Si ventas>100 Entonces
@@ -117,10 +117,18 @@ Funcion Par_impar <- numparimpar ( num )//10
 	FinSi
 Fin Funcion
 Funcion multiplos_entre_dos_numeros <- multiplosn ( num1,num2 )//11
-	si num1 mod num2 = 0 Entonces
-		escribir "el numero " " " num1 " "   " es multiplo del numero" " "  num2
-	sino
-		Escribir "el numero" " " num1 " "   "no es multiplo del numero" " "  num2 
+si num1>num2 Entonces
+		si num1 mod num2 = 0 Entonces
+			escribir "el numero " " " num1 " "   " es multiplo del numero" " "  num2
+		sino
+			Escribir "el numero" " " num1 " "   "no es multiplo del numero" " "  num2 
+		FinSi
+	SiNo
+			si num2 mod num1 = 0 Entonces
+				escribir "el numero " " " num2 " "   " es multiplo del numero" " "  num1
+			sino
+				Escribir "el numero" " " num2 " "   "no es multiplo del numero" " "  num1
+			FinSi
 	FinSi
 Fin Funcion
 Funcion Mayor_menor_secuencia <- secmaymen ( ct )//12
@@ -507,7 +515,7 @@ funcion Palindromo = npalindromo(lim,palabra)
 	FinMientras
 	Escribir ""
 	Si i>=lim Entonces
-		Escribir " La palabra ", palabra," es palÌndroma."
+		Escribir " La palabra ", palabra," es pal√≠ndroma."
 	Sino
 		Escribir "La palabra ingresada no es palindroma"
 	FinSi
@@ -539,7 +547,7 @@ Algoritmo Menu
 	// presentar el menor de 3 numeros ingresados
 	menuNumeros[5] = "5)Mayor de tres numeros"
 	// La despensa "El Baraton", a todas las ventas que pasen de $100,
-	//se les aplicar· un  descuento del 10%, a  todo los dem·s se les aplicar· sÛlo el 5% 
+	//se les aplicar√° un  descuento del 10%, a  todo los dem√°s se les aplicar√° s√≥lo el 5% 
 	// luego del recargo del iva del 12%
 	menuNumeros[6] = "6)Comprar productos"
 	// Ingresar el nombre,horas trabajadas, valor hora, horas50 y horas100 de sobretiempo
