@@ -672,8 +672,8 @@ Algoritmo Menu
 							escribir"ingrese un numero"
 							leer num2
 							calculadora("+",num1,num2)
-							Limpiar Pantalla
 							Esperar 3 Segundos
+							limpiar pantalla
 						"2":
 							escribir "sumar o restar"
 							escribir "ingrese un numero1"
@@ -1016,9 +1016,9 @@ Algoritmo Menu
 							Esperar 4 Segundos
 							Borrar Pantalla
 						"6":
-							Dimension arreglo1[15],arreglo2[15],sumarreglo[15]
 							Escribir "Ingrese cantidad de Elementos:" Sin Saltar
 							Leer dim
+							Dimension arreglo1[15],arreglo2[15],sumarreglo[15]
 							Escribir "Ingrese los datos para vector A"
 							ingresarArreglo(arreglo1,dim)
 							Escribir "Ingrese los datos para vector B"
